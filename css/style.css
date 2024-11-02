@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+.message {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Animasi Fade In untuk pesan */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animasi Slide Up untuk tombol */
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.8s forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi hover pada tombol Love */
+#loveButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff6b6b;
+  color: #fff;
+  border-radius: 50px;
+  transition: background-color 0.5s, transform 0.3s;
+}
+
+#loveButton:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.1);
+}
+
+select,
+#showGiftButton,
+#seeGiftButton {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  display: inline-block;
+}

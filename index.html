@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadiah untuk Pacar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button id="loveButton" onclick="showGreeting()">❤️</button>
+    <p id="greetingMessage" class="fade-in" style="display: none">Selamat Malam, Sayang! ❤️</p>
+    <button id="seeGiftButton" onclick="chooseGift()" class="slide-up" style="display: none">Lihat Hadiah</button>
+    <label for="gift" id="giftLabel" style="display: none">Pilih hadiah yang kamu mau:</label>
+    <select id="gift" style="display: none">
+      <option value="">--Pilih hadiah--</option>
+      <option value="Bunga">Bunga 🌹</option>
+      <option value="Cokelat">Cokelat 🍫</option>
+      <option value="Boneka">Boneka 🧸</option>
+    </select>
+    <button id="showGiftButton" onclick="showGift()" style="display: none">Tampilkan Hadiah</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
